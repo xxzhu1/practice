@@ -4,7 +4,7 @@
 <title>heart beating-2019/12/31</title>
 <style>
     body {
-        margin: 0;
+        margin: 250px;
     }
 
     div {
@@ -13,20 +13,20 @@
         background-color:red;
         margin: 100px auto;
         transform: rotate(45deg);
-        position: relative; /*相对定位 不会丢*/
+        position: relative; /*相对定位*/
     }
 
     /*伪元素 before after 选择器 用于css渲染中,向元素*/
     div::before,
     div::after {
         content: "";
-        position: absolute; /*绝对定位 不会丢*/
+        position: absolute; /*绝对定位*/
         width: 100px;
         height: 100px;
         background: red;
     }
     div::before{
-        left: -60px;
+        left:-60px;
     }
     div::after{
         top:-60px;
@@ -43,4 +43,10 @@
 
 </html>
 
-<!--同样代码 简化 优化-->
+<!--同样代码 优化同时简化代码
+    vue react 主流框架 app开发 mobile 
+    nodejs 前端中的后端语言
+
+    前端:
+    后端: 数据传输: java c语言 c++ c# python php .net
+-->
