@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<meta charest="UTF-8">
+<title>heart beating-2019/12/31</title>
+<style>
+    body {
+        margin: 0;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        background-color:red;
+        margin: 100px auto;
+        transform: rotate(45deg);
+        position: relative; /*相对定位 不会丢*/
+    }
+
+    /*伪元素 before after 选择器 用于css渲染中,向元素*/
+    div::before,
+    div::after {
+        content: "";
+        position: absolute; /*绝对定位 不会丢*/
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+    div::before{
+        left: -60px;
+    }
+    div::after{
+        top:-60px;
+    }
+</style>
+
+<head>
+
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
+
+<!--同样代码 简化 优化-->
